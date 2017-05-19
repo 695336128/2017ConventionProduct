@@ -31,7 +31,7 @@
 ```
 {
     "resultcode":"resultcode",
-    "qrcodeurl":"‘我的’界面中APP二维码"
+    "qrcodeurl":"‘我的’界面中APP二维码",
     "banner": [
         {
             "id": "新闻id",
@@ -42,6 +42,7 @@
     "notice": [
         {
             "id": "新闻id",
+            "type": "通知类型",
             "title": "http://www.google.com"
         }
     ],
