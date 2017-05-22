@@ -36,6 +36,7 @@
         {
             "id": "新闻id",
             "title": "导航title.",
+            "url": "导航详情",
             "imgurl": "图片地址"
         }
     ],
@@ -845,6 +846,8 @@
 | userid | String | 用户id |
 | language | String | 语言类型 |
 
+
+
 #### 返回格式
 
 ```
@@ -855,5 +858,7 @@
 }
 ```
 
+## 更新日志
 
+* v1.1 <font color="ff0000">首页banner增加详情url</font>
 
