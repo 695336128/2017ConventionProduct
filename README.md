@@ -1,4 +1,4 @@
-# 2017 会展 接口文档（v1.1）
+# 2017 会展 接口文档（v1.2）
 
 [TOC]
 
@@ -844,6 +844,7 @@
 | 请求参数 | 类型 | 意义 |
 | --- | --- | --- |
 | userid | String | 用户id |
+| type | String | 系统类型 IOS 为1 Android 为 2 |
 | language | String | 语言类型 |
 
 
@@ -861,4 +862,5 @@
 ## 更新日志
 
 * v1.1 <font color="ff0000">首页banner增加详情url</font>
+* v1.2 <font color="ff0000">检查更新增加系统类型判断</font>
 
