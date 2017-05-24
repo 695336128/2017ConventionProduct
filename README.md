@@ -1,4 +1,4 @@
-# 2017 会展 接口文档（v1.3）
+# 2017 会展 接口文档（v1.4）
 
 [TOC]
 
@@ -353,6 +353,15 @@
 ```
 {
     "resultcode": "resultcode",
+    "folder": {
+        "title": "文件夹名称",
+        "file": [
+            {
+                "url": "下载地址",
+                "title": "名称"
+            }
+        ]
+    },
     "file": [
         {
             "url": "下载地址",
@@ -896,4 +905,5 @@
 * v1.1 <font color="ff0000">首页banner增加详情url</font>
 * v1.2 <font color="ff0000">检查更新增加系统类型判断</font>
 * v1.3 <font color="ff0000">服务签到拆分为公共签到列表和个人签到列表</font>
+* v1.4 <font color="ff0000">大会资料接口修改</font>
 
