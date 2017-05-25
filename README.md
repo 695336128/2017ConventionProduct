@@ -1,4 +1,4 @@
-# 2017 会展 接口文档（v1.4）
+# 2017 会展 接口文档（v1.5）
 
 [TOC]
 
@@ -527,7 +527,8 @@
             "content": "内容",
             "image": [
                 {
-                    "imageurl": "图片地址"
+                    "imageurl": "原图地址",
+                    "thumbnailUrl": "缩略图地址"
                 }
             ],
             "review": [
@@ -906,4 +907,6 @@
 * v1.2 <font color="ff0000">检查更新增加系统类型判断</font>
 * v1.3 <font color="ff0000">服务签到拆分为公共签到列表和个人签到列表</font>
 * v1.4 <font color="ff0000">大会资料接口修改</font>
+* v1.5 <font color="ff0000">大会点评增加缩略图字段</font>
+
 
