@@ -1,4 +1,4 @@
-# 2017 会展 接口文档（v1.6）
+# 2017 会展 接口文档（v1.7）
 
 [TOC]
 
@@ -699,6 +699,7 @@
             "schedule": [
                 {
                     "id": "行程id",
+                    "type": "行程类型，1为公共行程，2为个人行程",
                     "name": "行程名",
                     "imgurl": "图片地址",
                     "status": "签到状态，1为已签，2为未签"
@@ -725,6 +726,7 @@
     "schedule": [
         {
             "id": "行程id",
+            "type": "行程类型，1为公共行程，2为个人行程",
             "name": "行程名",
             "imgurl": "图片地址",
             "status": "签到状态，1为已签，2为未签"
@@ -741,7 +743,20 @@
 | userid | String | 用户id |
 | guestid | String | 嘉宾id |
 | scheduleid | String | 行程id |
+| scheduletype | String | 行程类别 |
 | language | String | 语言类型 |
+
+
+```
+{
+    "userid": "用户id",
+    "language": "1",
+    "guestid": "123",
+    "scheduleid": "123",
+    "scheduletype": "行程类型,1为公共,2为个人"
+
+}
+```
 
 #### 返回格式
 
@@ -759,6 +774,24 @@
 | guestidlist | 数组 | 嘉宾id列表 |
 | scheduleidlist| 数组 | 行程id列表 |
 | language | String | 语言类型 |
+
+```
+{
+    "userid": "用户id",
+    "language": "1",
+    "guestidlist": [
+        {
+            "guestid": "123"
+        }
+    ],
+    "scheduleidlist": [
+        {
+            "scheduleid": "123",
+            "scheduletype": "行程类型,1为公共,2为个人"
+        }
+    ]
+}
+```
 
 #### 返回格式
 
@@ -910,4 +943,9 @@
 * v1.4 <font color="ff0000">大会资料接口修改</font>
 * v1.5 <font color="ff0000">大会点评增加缩略图字段</font>
 * v1.6 <font color="ff0000">大会点评增加点评发布者id(promulgatorid)字段</font>
+* v1.7 <font color="ff0000">修改签到部分请求，增加行程类型字段</font>
+
+
+
+
 
