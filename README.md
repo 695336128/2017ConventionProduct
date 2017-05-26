@@ -1,4 +1,4 @@
-# 2017 会展 接口文档（v1.5）
+# 2017 会展 接口文档（v1.6）
 
 [TOC]
 
@@ -522,6 +522,7 @@
         {
             "id": "点评id",
             "name": "名称",
+            "promulgatorid": "发布者id",
             "imageurl": "头像",
             "time": "1小时前",
             "content": "内容",
@@ -908,5 +909,5 @@
 * v1.3 <font color="ff0000">服务签到拆分为公共签到列表和个人签到列表</font>
 * v1.4 <font color="ff0000">大会资料接口修改</font>
 * v1.5 <font color="ff0000">大会点评增加缩略图字段</font>
-
+* v1.6 <font color="ff0000">大会点评增加点评发布者id(promulgatorid)字段</font>
 
