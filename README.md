@@ -1,10 +1,10 @@
-# 2017 会展 接口文档（v1.7）
+# 2017 会展 接口文档（v1.8）
 
 [TOC]
 
 ## 首页
 ### 首页接口
-
+    
 | 类型 | type |
 | :-- | :-: |
 | 大会新闻 | 1 |
@@ -353,15 +353,17 @@
 ```
 {
     "resultcode": "resultcode",
-    "folder": {
-        "title": "文件夹名称",
-        "file": [
-            {
-                "url": "下载地址",
-                "title": "名称"
-            }
-        ]
-    },
+    "folder": [
+        {
+            "title": "文件夹名称",
+            "file": [
+                {
+                    "url": "下载地址",
+                    "title": "名称"
+                }
+            ]
+        }
+    ],
     "file": [
         {
             "url": "下载地址",
@@ -944,6 +946,8 @@
 * v1.5 <font color="ff0000">大会点评增加缩略图字段</font>
 * v1.6 <font color="ff0000">大会点评增加点评发布者id(promulgatorid)字段</font>
 * v1.7 <font color="ff0000">修改签到部分请求，增加行程类型字段</font>
+* v1.8 <font color="ff0000">大会资料接口修改</font>
+
 
 
 
