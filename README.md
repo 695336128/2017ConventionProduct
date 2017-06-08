@@ -937,6 +937,44 @@
 }
 ```
 
+### 会话列表
+#### 请求格式
+
+```
+{
+    "userid": "userid",
+    "language": "language",
+    "userlist": [
+        {
+            "userid": "userid"
+        }
+    ]
+}
+```
+
+#### 返回格式（群组列表一并返回）
+
+
+```
+{
+    "userlist": [
+        {
+            "id": "id",
+            "name": "名称",
+            "imageurl": "头像"
+        }
+    ],
+    "group": [
+        {
+            "id": "群组id",
+            "name": "群组名称",
+            "imageurl": "群组头像"
+        }
+    ]
+}
+```
+
+
 ## 更新日志
 
 * v1.1 <font color="ff0000">首页banner增加详情url</font>
@@ -947,9 +985,7 @@
 * v1.6 <font color="ff0000">大会点评增加点评发布者id(promulgatorid)字段</font>
 * v1.7 <font color="ff0000">修改签到部分请求，增加行程类型字段</font>
 * v1.8 <font color="ff0000">大会资料接口修改</font>
-
-
-
+* v1.9 <font color="ff0000">新增会话列表请求接口，群组列表需一并返回</font>
 
 
 
