@@ -991,20 +991,20 @@
     }
 ]
 ```
-### 室内导航 图片导航
+### 室内导航 图片导航
 #### 请求格式
 | 请求参数 | 类型 | 意义 |
 | --- | --- | --- |
 | userid | String | 用户id |
-| type | String | 导航图片类型（ 酒店/宴会厅） |
+| type | String | 导航图片类型（酒店-1/宴会厅-2） |
 | language | String | 语言类型 |
 #### 返回格式
 
 ```
 [
     {
-        "typeName": "会场一",
-        "picturs": [
+        "typeName": "会场一",
+        "picturs": [
             {
                 "pictureUrl": "urlString",
                 "pictureName":"L1"
@@ -1016,8 +1016,8 @@
         ]
     },
     {
-        "typeName": "会场二",
-        "picturs": [
+        "typeName": "会场二",
+        "picturs": [
             {
                 "pictureUrl": "urlString",
                 "pictureName":"L1"
