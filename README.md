@@ -1,10 +1,10 @@
-# 2017 会展 接口文档（v2.1）
+# 2017 会展 接口文档（v2.2）
 
 [TOC]
 
 ## 首页
 ### 首页接口
-    
+
 | 类型 | type |
 | :-- | :-: |
 | 大会新闻 | 1 |
@@ -512,6 +512,7 @@
 | 请求参数 | 类型 | 意义 |
 | --- | --- | --- |
 | userid | String | 用户id |
+| page | String | 分页，每次15条 |
 | language | String | 语言类型 |
 
 #### 返回格式
@@ -768,7 +769,7 @@
     "resultcode": "resultcode",
 }
 ```
-    
+
 ###服务签到（批量签到）
 #### 请求格式
 | 请求参数 | 类型 | 意义 |
@@ -990,7 +991,45 @@
     }
 ]
 ```
+### 室内导航 图片导航
+#### 请求格式
+| 请求参数 | 类型 | 意义 |
+| --- | --- | --- |
+| userid | String | 用户id |
+| type | String | 导航图片类型（ 酒店/宴会厅） |
+| language | String | 语言类型 |
+#### 返回格式
 
+```
+[
+    {
+        "typeName": "会场一",
+        "picturs": [
+            {
+                "pictureUrl": "urlString",
+                "pictureName":"L1"
+            },
+            {
+                "pictureUrl": "urlString",
+                "pictureName":"L2"
+            }
+        ]
+    },
+    {
+        "typeName": "会场二",
+        "picturs": [
+            {
+                "pictureUrl": "urlString",
+                "pictureName":"L1"
+            },
+            {
+                "pictureUrl": "urlString",
+                "pictureName":"L2"
+            }
+        ]
+    }
+]
+```
 ## 更新日志
 
 * v1.1 <font color="ff0000">首页banner增加详情url</font>
@@ -1004,7 +1043,7 @@
 * v1.9 <font color="ff0000">新增会话列表请求接口，群组列表需一并返回</font>
 * v2.0 <font color="ff0000">新增室外导航接口</font>
 * v2.1 <font color="ff0000">服务调度接口增加type字段，会话列表接口修改</font>
-
+* v2.2 <font color="ff0000">新增室内导航接口(图片类型室内导航，不显示地图，只显示场地平面图片);大会点评增加分页请求</font>
 
 
 
